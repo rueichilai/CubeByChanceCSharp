@@ -38,12 +38,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblCompetitorTime = new System.Windows.Forms.Label();
             this.txtCompetitorTime = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtRoundNumber = new System.Windows.Forms.TextBox();
+            this.btnRoundNext = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboboxRound
             // 
             this.comboboxRound.FormattingEnabled = true;
-            this.comboboxRound.Location = new System.Drawing.Point(17, 136);
+            this.comboboxRound.Location = new System.Drawing.Point(17, 172);
             this.comboboxRound.Name = "comboboxRound";
             this.comboboxRound.Size = new System.Drawing.Size(252, 21);
             this.comboboxRound.TabIndex = 0;
@@ -103,7 +106,7 @@
             // txtCompetitorName
             // 
             this.txtCompetitorName.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCompetitorName.Location = new System.Drawing.Point(17, 84);
+            this.txtCompetitorName.Location = new System.Drawing.Point(246, 53);
             this.txtCompetitorName.Name = "txtCompetitorName";
             this.txtCompetitorName.Size = new System.Drawing.Size(217, 30);
             this.txtCompetitorName.TabIndex = 6;
@@ -112,7 +115,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(349, 55);
+            this.label2.Location = new System.Drawing.Point(12, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 26);
             this.label2.TabIndex = 7;
@@ -122,7 +125,7 @@
             // 
             this.lblCompetitorTime.AutoSize = true;
             this.lblCompetitorTime.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCompetitorTime.Location = new System.Drawing.Point(402, 55);
+            this.lblCompetitorTime.Location = new System.Drawing.Point(65, 95);
             this.lblCompetitorTime.Name = "lblCompetitorTime";
             this.lblCompetitorTime.Size = new System.Drawing.Size(177, 26);
             this.lblCompetitorTime.TabIndex = 8;
@@ -131,16 +134,51 @@
             // txtCompetitorTime
             // 
             this.txtCompetitorTime.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCompetitorTime.Location = new System.Drawing.Point(354, 83);
+            this.txtCompetitorTime.Location = new System.Drawing.Point(238, 94);
             this.txtCompetitorTime.Name = "txtCompetitorTime";
             this.txtCompetitorTime.Size = new System.Drawing.Size(225, 30);
             this.txtCompetitorTime.TabIndex = 9;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 136);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(147, 26);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Round Number:";
+            // 
+            // txtRoundNumber
+            // 
+            this.txtRoundNumber.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRoundNumber.Location = new System.Drawing.Point(156, 135);
+            this.txtRoundNumber.Multiline = true;
+            this.txtRoundNumber.Name = "txtRoundNumber";
+            this.txtRoundNumber.Size = new System.Drawing.Size(41, 31);
+            this.txtRoundNumber.TabIndex = 11;
+            this.txtRoundNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnRoundNext
+            // 
+            this.btnRoundNext.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRoundNext.Location = new System.Drawing.Point(203, 135);
+            this.btnRoundNext.Name = "btnRoundNext";
+            this.btnRoundNext.Size = new System.Drawing.Size(76, 31);
+            this.btnRoundNext.TabIndex = 12;
+            this.btnRoundNext.Text = "Next";
+            this.btnRoundNext.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnRoundNext.UseVisualStyleBackColor = true;
+            this.btnRoundNext.Click += new System.EventHandler(this.btnRoundNext_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRoundNext);
+            this.Controls.Add(this.txtRoundNumber);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCompetitorTime);
             this.Controls.Add(this.lblCompetitorTime);
             this.Controls.Add(this.label2);
@@ -171,6 +209,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblCompetitorTime;
         private System.Windows.Forms.TextBox txtCompetitorTime;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtRoundNumber;
+        private System.Windows.Forms.Button btnRoundNext;
     }
 }
 
