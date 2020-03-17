@@ -43,6 +43,7 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.listResults = new System.Windows.Forms.ListBox();
             this.groupBoxInfo = new System.Windows.Forms.GroupBox();
+            this.btnRank = new System.Windows.Forms.Button();
             this.groupBoxInfo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +58,7 @@
             // btnQuit
             // 
             this.btnQuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuit.Location = new System.Drawing.Point(690, 675);
+            this.btnQuit.Location = new System.Drawing.Point(700, 694);
             this.btnQuit.Name = "btnQuit";
             this.btnQuit.Size = new System.Drawing.Size(98, 35);
             this.btnQuit.TabIndex = 1;
@@ -181,7 +182,7 @@
             this.listResults.ItemHeight = 23;
             this.listResults.Location = new System.Drawing.Point(17, 239);
             this.listResults.Name = "listResults";
-            this.listResults.Size = new System.Drawing.Size(498, 441);
+            this.listResults.Size = new System.Drawing.Size(520, 441);
             this.listResults.TabIndex = 13;
             // 
             // groupBoxInfo
@@ -206,11 +207,23 @@
             this.groupBoxInfo.TabStop = false;
             this.groupBoxInfo.Text = "Info";
             // 
+            // btnRank
+            // 
+            this.btnRank.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRank.Location = new System.Drawing.Point(17, 695);
+            this.btnRank.Name = "btnRank";
+            this.btnRank.Size = new System.Drawing.Size(71, 34);
+            this.btnRank.TabIndex = 15;
+            this.btnRank.Text = "Rank";
+            this.btnRank.UseVisualStyleBackColor = true;
+            this.btnRank.Click += new System.EventHandler(this.btnRank_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 722);
+            this.ClientSize = new System.Drawing.Size(810, 741);
+            this.Controls.Add(this.btnRank);
             this.Controls.Add(this.listResults);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.groupBoxInfo);
@@ -240,6 +253,7 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.ListBox listResults;
         private System.Windows.Forms.GroupBox groupBoxInfo;
+        private System.Windows.Forms.Button btnRank;
     }
 }
 
